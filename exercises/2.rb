@@ -27,3 +27,21 @@
 # We can specify multiple conditions with || (OR) and && (AND)
 # if dinner == "tacos" || dinner == "pizza"
 
+puts "Welcome to craps! The ultimate bathroom game."
+di1 = rand(1..6)
+di2 = rand(1..6)
+total = di1 + di2
+
+if total == 7 || total == 11
+    outcome = "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    outcome = "YOU LOSE!"
+else
+    outcome = "THE POINT IS #{total}"
+end
+
+puts "The first number is #{di1}"
+puts "The second is #{di2}"
+puts "Your total is #{total}"
+puts outcome
+puts "Did you have fun? Wanna play again? Hit the up arrow and then return that shit..."

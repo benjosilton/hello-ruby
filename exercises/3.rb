@@ -15,3 +15,8 @@
 # Learn to read the documentation!
 # http://ruby-doc.org/core-2.5.1/Array.html
 
+my_list = ["bacon", "pork", "shrimp", "apples", "pears", "oysters", "avocados", "chocolate"]
+mima_list = ["tomatoes", "kale", "feta", "avocados", "peppers", "chocolate"]
+
+combined_list = my_list + mima_list
+puts combined_list.uniq.sort

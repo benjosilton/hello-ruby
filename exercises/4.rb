@@ -27,3 +27,12 @@ weather_data = {
   ]
 }
 
+today = "Currently it is #{weather_data[:current][:temperature]} and #{weather_data[:current][:conditions]}."
+
+tomorrow = "Tomorrow it will be #{weather_data[:forecast][0][:temperature]} and #{weather_data[:forecast][0][:conditions]}."
+
+friday = "Friday you can expect it to be #{weather_data[:forecast][1][:temperature]} and #{weather_data[:forecast][1][:conditions]} and generally beautiful!"
+
+written_forecast = [today, tomorrow, friday]
+
+puts written_forecast

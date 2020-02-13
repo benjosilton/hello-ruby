@@ -21,3 +21,21 @@
 # To rectify this, you can convert the number into a string
 # "i would like #{5} tacos"
 
+puts "Welcome to craps! The ultimate bathroom game."
+di1 = rand(1..6)
+di2 = rand(1..6)
+total = di1 + di2
+
+if total < 7
+    conclusion = "you suck go away"
+elsif total == 7
+    conclusion = "Meh, you're OK"
+else
+    conclusion = "YOU WIN!"
+end
+
+puts "The first number is #{di1}"
+puts "The second is #{di2}"
+puts "Your total is #{total}"
+puts conclusion
+puts "Did you have fun? Wanna play again? Hit the up arrow and then return..."
